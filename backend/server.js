@@ -1,52 +1,64 @@
+const express = require('express');
+const nodemailer = require('nodemailer');
+const path = require('path');
 const dotenv = require('dotenv');
+
 dotenv.config();
 
+const app = express();
+const PORT = process.env.PORT || 5002;
 
-const express = require ('express');
-const app = express(); 
-const path = require('path');
-const PORT = process.env.PORT || 5001;
-const nodemailer = require('nodemailer');
-
-//Middleware
-app.use(express.static(path.join(__dirname, '../frontend/dist')));
+// Middleware to parse JSON
 app.use(express.json());
 
-app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
+// --- API route for contact form ---
+app.post('/api/send-email', (req, res) => {
+    const { email, subject, message } = req.body;
+
+const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false, // use STARTTLS
+    auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+    },
 });
 
-app.post('/', (req,res) => {
-    console.log(req.body)
+const mailOptions = {
+    from: email,
+    to: process.env.EMAIL_USER,
+    subject: `Message from ${email}: ${subject}`,
+    text: message,
+};
 
-    const transporter = nodemailer.createTransport({
-        host: "smtp.gmail.com",
-        port: 587,
-        secure: false, // upgrade later with STARTTLS
-        auth: {
-            user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASS
+transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+        console.error('Email error:', error);
+        return res.status(500).send('Failed to send email');
         }
-    })
-
-    const mailOptions = {
-        from: req.body.email,
-        to: process.env.EMAIL_USER,
-        subject: `Message from ${req.body.email}: ${req.body.subject}`,
-        text: req.body.message
-    }
-
-    transporter.sendMail(mailOptions, (error, info) => {
-        if(error){
-            console.log(error);
-            res.send('Error');
-        }else{
-            console.log('Email sent: ' + info.response);
-            res.send('Success');
-        }
-    })
+    console.log('Email sent:', info.response);
+        res.status(200).send('Email sent successfully');
+    });
 });
 
+// --- Serve frontend in production ---
+if (process.env.NODE_ENV === 'production') {
+    const frontendPath = path.join(__dirname, '../frontend/dist');
+    app.use(express.static(frontendPath));
+
+  // Serve index.html for any unknown routes
+    app.get('/', (req, res) => {
+        res.sendFile(path.join(frontendPath, 'index.html'));
+    });
+    } else {
+    // Simple message when not in production
+    app.get('/', (req, res) => {
+        res.send('API is running...');
+    });
+}
+
+// --- Start server ---
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-})
+    console.log(`Server running at http://localhost:${PORT}`);
+});
