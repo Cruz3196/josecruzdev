@@ -17,7 +17,7 @@ const CTA = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('https://localhost:5001/api/send-email', {
+            const response = await fetch('http://localhost:5001/api/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
