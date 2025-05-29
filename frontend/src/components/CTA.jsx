@@ -139,7 +139,7 @@ const CTA = () => {
             </nav>
             <aside>
                 <p>Designed and Developed by Jose Cruz.
-                Built with <span className='text-teal-400'>Coffee</span> & <span className='text-teal-400'>Love</span>. Hosted on <span className='text-teal-400'>Vercel</span>.</p>
+                Built with <span className='text-teal-400'>Coffee</span> & <span className='text-teal-400'>Love</span>.
             </aside>
         </footer>
     )
