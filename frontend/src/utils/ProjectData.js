@@ -1,5 +1,4 @@
 import vitalwear from "../assets/vitalwear.png"
-import portfolio from "../assets/CruzPortfolio.png"
 
 const ProjectData = [
     {
