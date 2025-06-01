@@ -4,18 +4,31 @@ import Home from './pages/Home';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { ThemeProvider } from './context/ThemeContext';
+import useImagePreloader from './hooks/useImagePreloader';
 import './App.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
+// Import your images
+import profilepic from './assets/profile-pic.png';
+import josecruz from './assets/josecruz.png';
+
 function AppContent() {
   const [screenLoading, setScreenLoading] = useState(true);
+  
+  // List all images that need to be preloaded
+  const imagesToPreload = [profilepic, josecruz];
+  
+  const { imagesLoaded } = useImagePreloader(imagesToPreload);
 
   useEffect(() => {
-    setScreenLoading(true);
-    setTimeout(() => {
-      setScreenLoading(false);
-    }, 3000);
-  }, []);
+    // Only hide loading screen when images are loaded
+    if (imagesLoaded) {
+      // Optional: Add a small delay to ensure smooth transition
+      setTimeout(() => {
+        setScreenLoading(false);
+      }, 500);
+    }
+  }, [imagesLoaded]);
 
   return (
     <>
@@ -47,4 +60,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
