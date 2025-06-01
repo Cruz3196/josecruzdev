@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="hero h-140 ">
         <div className="hero-content flex-col justify-start items-start w-full">
             <div className="avatar avatar-placeholder">
-                <div className="bg-neutral text-neutral-content w-20 h-20 rounded-full">
+                <div className="bg-neutral text-neutral-content w-30 h-30 rounded-full">
                     <img src={profilepic} />
                 </div>
             </div>

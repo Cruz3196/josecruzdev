@@ -9,7 +9,7 @@ const About = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center max-w-6xl mx-auto py-5 lg:py-10">
                     {/* Text Content */}
                     <div className="order-2 lg:order-1 text-left">
-                        <h1 className="font-bold text-2xl sm:text-5xl mb-4">
+                        <h1 className="font-bold text-2xl sm:text-4xl md:text-5xl mb-4">
                             I'm Cruz. I'm a computer science major, and a full stack developer.
                         </h1>
                         <p className="py-2 text-base leading-7 sm:leading-8">

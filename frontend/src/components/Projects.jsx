@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
-import ProjectData from './ProjectData'; // Import your data
+import ProjectData from '../utils/ProjectData'; // Import your data
 
 const Projects = () => {
     const [expandedProjects, setExpandedProjects] = useState({});
