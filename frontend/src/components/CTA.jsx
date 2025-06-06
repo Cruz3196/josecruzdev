@@ -129,7 +129,7 @@ const CTA = () => {
                     </dialog>
 
                     <div 
-                        onClick={() => window.open('/Jose Cruz Resume-5-2.pdf', '_blank')}
+                        onClick={() => window.open('/Resume-3.pdf', '_blank')}
                         className="cursor-pointer"
                         >
                         <i className="bi bi-card-text text-2xl cursor-pointer hover:text-teal-400"></i>
