@@ -65,7 +65,7 @@ const Projects = () => {
                                 <img
                                     src={project.image}
                                     alt={project.title.toLowerCase()}
-                                    className="xs:w-90 h-50 mx-1 sm:w-100 sm:h-70 sm:mx-5 lg:w-110 lg:h-70"
+                                    className="xs:w-90 h-50 mx-1 sm:w-100 sm:h-70 sm:mx-5 lg:w-150 lg:h-100"
                                 />
                             </div>
 
