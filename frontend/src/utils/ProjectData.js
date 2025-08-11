@@ -13,7 +13,7 @@ const ProjectData = [
     {
     id: 2,
     title: "X-Clone",
-    description: "This is a clone of the popular social media website X. The tech stack that was used to build this site is react, expressJs, mongoDB, Nodejs, tailwindCSS, and JWT authentication. The goal of this project was to get a deep understanding of how routes & controllers operate in the backend, as well as how to use JWT authentication to create a secure backend. I also learned how to test urls using Postman.",
+    description: "This is a clone of the popular social media site X. Users can sign up and log in securely, with user sessions managed by JWT for authentication and authorization. Once logged in, users can create, like, and comment on posts, follow other users, edit their profile, and receive notifications. Building this project taught me how to architect a full-stack application by connecting a MongoDB database to an Express.js backend, creating the routes and controllers needed to power the React frontend.",
     image: Xclone, 
     sourceCode: "https://github.com/Cruz3196/X-Clone",
     liveDemo: "https://x-clone-fz67.onrender.com/login"
