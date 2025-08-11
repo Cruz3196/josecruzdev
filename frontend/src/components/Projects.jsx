@@ -63,9 +63,10 @@ const Projects = () => {
                             {/* Responsive Image: Conditionally set order */}
                             <div className={`order-1 ${isEvenIndex ? 'lg:order-1' : 'lg:order-2'} flex justify-center`}>
                                 <img
+                                
                                     src={project.image}
                                     alt={project.title.toLowerCase()}
-                                    className="xs:w-90 h-50 mx-1 sm:w-100 sm:h-70 sm:mx-5 lg:w-150 lg:h-100 xl:w-130 xl:h-90 "
+                                    className="xs:w-90 h-50 mx-1 sm:w-100 sm:h-70 sm:mx-5 lg:w-130 lg:h-90 xl:w-130 xl:h-90 "
                                 />
                             </div>
 
