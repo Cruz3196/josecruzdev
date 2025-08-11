@@ -1,5 +1,5 @@
 import vitalwear from "../assets/vitalwear.png"
-import Xclone from "../assets/xclone.png"
+import Xclone from "../assets/Xclone.png"
 
 const ProjectData = [
     {
