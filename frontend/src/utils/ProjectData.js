@@ -1,4 +1,5 @@
 import vitalwear from "../assets/vitalwear.png"
+import Xclone from "../assets/xclone.png"
 
 const ProjectData = [
     {
@@ -8,6 +9,14 @@ const ProjectData = [
         image: vitalwear, 
         sourceCode: "https://github.com/Cruz3196/vitalwear",
         liveDemo: "https://vitalwear.netlify.app"
+    },
+    {
+    id: 2,
+    title: "X-Clone",
+    description: "This is a clone of the popular social media website X. The tech stack that was used to build this site is react, expressJs, mongoDB, Nodejs, tailwindCSS, and JWT authentication. The goal of this project was to get a deep understanding of how routes & controllers operate in the backend, as well as how to use JWT authentication to create a secure backend. I also learned how to test urls using Postman.",
+    image: Xclone, 
+    sourceCode: "https://github.com/Cruz3196/X-Clone",
+    liveDemo: "https://x-clone-fz67.onrender.com/login"
     }
 ]
 
