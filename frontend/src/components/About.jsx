@@ -13,7 +13,7 @@ const About = () => {
                             I'm Cruz. I'm a computer science major, and a full stack developer.
                         </h1>
                         <p className="py-2 text-base leading-7 sm:leading-8">
-                            I am Jose Cruz, a full stack developer with a passion for creating innovative and user-friendly applications. After several years in the automotive industry as a service technician, I decided to make a career change and pursue a career in software development. I have been self learning for about two years, and recently decided to study computer science through online programs, with a goal of earning a bachelor's degree in computer science.
+                            With a passion for creating innovative and user-friendly applications. After several years in the automotive industry as a service technician, I decided to make a career change and pursue a career in software development. I have been self learning for about two years, and recently decided to study computer science through online programs, with a goal of earning a bachelor's degree in computer science.
                         </p>
                         <p className="py-2 text-base leading-7 sm:leading-8">
                             I am comfortable working with React, Node.js, and MongoDB. I also have experience in HTML, CSS, and JavaScript. I am always eager to learn new technologies. 
