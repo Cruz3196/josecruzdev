@@ -7,7 +7,7 @@ I wanted to rebuild my portfolio site and since my first attempt was a HTML temp
 This project is responsive and has dark and light mode toggle. Also, the email functionality does work in which I used Gmail's as the service provide. 
 
 ## Running the project 
-In order to run this project, you would first need to git clone. Once the project has been cloned in the main directory ```run npm run build``` this will generate "dist" folder in the frontend. 
+In order to run this project, you would first need to '''git clone'''. Once the project has been cloned; navigate to the main directory and run '''npm run build``` this will generate "dist" folder in the frontend. 
 
 ### Disable the content security policy (CSP)
 In both the dist/index.html and frontend/index.html files, comment out the following line: 
@@ -17,7 +17,7 @@ In both the dist/index.html and frontend/index.html files, comment out the follo
 ```
 
 
- Once that is done you can now run npm run dev in the main directory and this will run the server on 5001, then on a separate terminal cd to the frontend directory and run npm run dev, this will run the front end react on port 5173. 
+ Once that is done, you can now run '''npm run dev''' in the main directory and this will start Express server on port 5001. On a separate terminal cd to the frontend directory and run '''npm run dev''', this will launch the React app on port 5173. 
 
 ## Email Setup
 
