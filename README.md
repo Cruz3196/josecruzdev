@@ -1,4 +1,4 @@
-# Jose Cruz Portfolio
+# Jose Cruz's Portfolio
 
 ## Overview
 I wanted to rebuild my portfolio site and since my first attempt was a HTML template, I just didn't feel like I actually did anything. For this project since I have been learning: **ReactJS**, **TailwindCSS**, and **ExpressJS**; I decided revisit the drawing board and do a small full stack application. 
