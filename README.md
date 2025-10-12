@@ -1,18 +1,20 @@
 # Jose Cruz Portfolio
 
 ## Overview
-I wanted to rebuild my portfolio site. and since my first attempt was a HTML template, I just didn't feel like I actually did anything. For this project since I have been learning ReactJs, Tailwind, and Express Js; I decided to just build a small full stack application that consist of node mailer with Gmail as a service. 
+I wanted to rebuild my portfolio site and since my first attempt was a HTML template, I just didn't feel like I actually did anything. For this project since I have been learning: **ReactJS**, **TailwindCSS**, and **ExpressJS**; I decided revisit the drawing board and do a small full stack application. 
 
 ## Features
-This project is responsive and has dark and light mode. Also, the email functionality does work in which I used Gmail's service. 
+This project is responsive and has dark and light mode toggle. Also, the email functionality does work in which I used Gmail's as the service provide. 
 
 ## Running the project 
-In order to run this project, you would first need to git clone. Once the project has been cloned in the main directory run <npm run build> this will generate "dist" folder in the frontend. 
+In order to run this project, you would first need to git clone. Once the project has been cloned in the main directory ```run npm run build``` this will generate "dist" folder in the frontend. 
 
 ### Disable the content security policy (CSP)
 In both the dist/index.html and frontend/index.html files, comment out the following line: 
 
-``` bash <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> ```
+```
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+```
 
 
  Once that is done you can now run npm run dev in the main directory and this will run the server on 5001, then on a separate terminal cd to the frontend directory and run npm run dev, this will run the front end react on port 5173. 
