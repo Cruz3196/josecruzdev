@@ -19,15 +19,6 @@ In both the dist/index.html and frontend/index.html files, comment out the follo
 
  Once that is done, you can now run ```npm run dev``` in the main directory and this will start Express server on port 5001. On a separate terminal cd to the frontend directory and run ```npm run dev```, this will launch the React app on port 5173. 
 
-### Before Deployment
-If you plan to deploy the project, make sure to uncomment the CSP meta tag in both dist/index.html and frontend/index.html:
-
-```
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
-```
-
-This ensures secure HTTPS requests are enforced in production.
-
 ## Email Setup
 
 This project uses email functionality. To enable it:
@@ -43,6 +34,15 @@ EMAIL_USER=your-email@gmail.com
 EMAIL_PASS=your-app-password
 EMAIL_SERVICE=gmail 
 ```
+
+## Before Deployment
+If you plan to deploy the project, make sure to uncomment the CSP meta tag in both dist/index.html and frontend/index.html:
+
+```
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+```
+
+This ensures secure HTTPS requests are enforced in production.
 
 ## Dependencies 
 ###### Frontend 
