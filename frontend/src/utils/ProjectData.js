@@ -7,7 +7,7 @@ const ProjectData = [
     id: 1,
     title: "ABC Fitness",
     description:
-      "I rebuilt an older HTML/CSS/JavaScript project (originally using local/session storage) into a full-stack application. I used ideas from a full-stack Udemy course and open-source GitHub repos to improve the backend structure and expand features.\n\nThe app is built with React, Node.js, Express, MongoDB, and Mongoose. I implemented JWT authentication (access + refresh tokens), bcrypt password hashing, and cookie-based auth using secure settings (httpOnly, secure, sameSite=strict). Refresh tokens rotate on a timer and are cached with Redis. Role-based middleware restricts access for admin and trainer accounts.\n\nAll API routes were tested with Postman, and security hardening includes rate limiting to reduce DoS abuse. Admin access is available on request for reviewers.",
+      "I rebuilt an older HTML/CSS/JavaScript project (originally using local/session storage) into a full-stack application. I used ideas from a full-stack Udemy course and open-source GitHub repos to improve the backend structure and expand features.\n\nThe app is built with React, Node.js, Express, MongoDB, and Mongoose. I implemented JWT authentication (access + refresh tokens), bcrypt password hashing, and cookie-based auth using secure settings (httpOnly, secure, sameSite=strict). Refresh tokens rotate on a timer and are cached with Redis. Role-based middleware restricts access for admin and trainer accounts.\n\nAll API routes were tested with Postman, and security hardening includes rate limiting to reduce DoS abuse.",
     image: reactABCFitness,
     sourceCode: "https://github.com/Cruz3196/abcfitness-react/tree/main",
     liveDemo: "https://abcfitness-react.onrender.com/",
